@@ -1,0 +1,218 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --principal: ;
+    --secundario: ;
+    --tercieria: ;
+    --sombra: 0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF inset, 0px -3px 2px rgba(0,0,0,0.25) inset; ;
+}
+
+
+.paguina{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.paguina__main{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.Empresa{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Empresa > section {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Empresa section:first-child{
+    max-width: 25%;
+}
+
+.Empresa section h2{
+    width: max-content;
+    font-size: larger;
+}
+
+.Empresa  section > figure{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Empresa section > figure > img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.infoEmpresa{
+    width: 99%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--sombra);
+    margin-top: 15px;
+    margin: 15px auto;
+    overflow: hidden;
+}
+
+.infoEmpresa > div:first-child {
+    width: 100vw;
+    text-align: center;
+    padding: 15px;
+    font-size: larger;
+    border-bottom: 2px solid rgb(120, 120, 120);
+}
+
+.infoEmpresa > section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.infoEmpresa > section > div{
+    width: 33.3%;
+    padding: 15px;
+    min-width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid rgba(120, 122, 124, .8)
+}
+
+.infoEmpresa > section > div :nth-child(1){
+    margin-right: 20px;
+    text-align: start;
+}
+
+.Cliente{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.search >  button {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+  
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h2{
+  margin: 0;
+}
+
+.modal__form {
+  opacity: 0.7;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  
+}
+
+.modal__form div {
+  width: 90%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__form  input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    width: 90%;
+    color: #222;
+    margin-left: calc(10% + 5px);
+}
+
+.modal__form input:focus {
+    outline: none;
+}
+
+
+@media (max-width: 1060px) {
+       .infoEmpresa > section > div{
+        width: 50%;
+        min-width: 50%;
+        
+    }
+
+}
+
+@media (max-width: 740px) {
+      
+    .infoEmpresa > section > div{
+        width: 100%;
+        text-align: justify;
+    }
+}
