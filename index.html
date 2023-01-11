@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
         integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/fb7c801823.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -67,13 +67,14 @@
                 </section>
             </section>
             <section class="Cliente">
-                
-                    <div class="search">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        <button id="open" class="btn btn-info">Agregar Cliente</button>
-                    </div>
 
-            
+                <div class="search">
+                    <input type="search" name="search" id="search" placeholder="Ingrese el Ruc o la cedula">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <button id="open">Agregar</button>
+
                 <ul class="ClienteEncontrado">
                     <li>
                         <a>
@@ -83,31 +84,38 @@
                 </ul>
             </section>
 
-            
+
             <div id="modal_container" class="modal-container">
                 <div class="modal">
-                    <h2>Ventana Modal</h2>
+
+                    <section>
+                        <h2>Ventana Modal</h2>
+                        <i class="fa-solid fa-rectangle-xmark" id="close"></i>
+
+                    </section>
+
                     <form action="#" method="post" class="modal__form">
                         <div>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="text" placeholder="INGRESE EL RUC O CEDULA" name="ruc" id="ruc">
                         </div>
                         <div>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="text" placeholder="INGRESE LOS NOMBRES " name="name" id="name">
                         </div>
                         <div>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="email" placeholder="INGRESE EL CORREO " name="email" id="email">
                         </div>
                         <div>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="text" placeholder="INGRESE EL CELULAR " name="cell" id="cell">
                         </div>
                         <div>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="text" placeholder="INGRESE LA DIRECCION " name="direccion" id="direccion">
                         </div>
                         <div>
-                            <input type="text" placeholder="" name="" id="">
+                            <br>
+                            <button type="submit" color="black"> GUARDAR CLIENTE</button>
                         </div>
                     </form>
-                    <button id="close">Cerrar</button>
+
                 </div>
         </main>
         <footer class="paguina__footer" id="paguina__footer">

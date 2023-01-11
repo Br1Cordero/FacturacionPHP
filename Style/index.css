@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+*::placeholder{
+    text-align: center;
+}
+
 :root{
     --principal: ;
     --secundario: ;
@@ -47,17 +52,16 @@
     align-items: center;
 }
 
-.Empresa section:first-child{
-    max-width: 25%;
-}
 
 .Empresa section h2{
     width: max-content;
     font-size: larger;
+    display: block;
 }
 
 .Empresa  section > figure{
-    width: 100%;
+    max-width: 25%;
+    min-width: 200px;
     height: 100%;
     position: relative;
 }
@@ -117,13 +121,37 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
+    margin: 25px;
 }
 
+.search {
+    
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px; 
+}
 
-.search >  button {
+.search input{
+    width: 90%;
+    margin-right: 5px;
+    border: 1.45px solid #47a386;
+    outline: none;
+    transition:  all 0.5s ease-in-out;
+    padding: 2px;
+}
+
+.search  input:focus{
+    border: 2px solid #47a386;
+
+}
+
+  button {
     background-color: #47a386;
     border: 0;
     border-radius: 5px;
@@ -131,7 +159,14 @@
     color: #fff;
     font-size: 14px;
     padding: 10px 25px;
+    width: max-content;
+    margin: 0 8px;
 }
+
+ button:hover {
+    cursor: pointer;
+}
+
   
 .modal-container {
   display: flex;
@@ -154,18 +189,35 @@
 }
 
 .modal {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 600px;
   max-width: 100%;
   padding: 30px 50px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
+  position: relative;
+  
 }
 
-.modal h2{
-  margin: 0;
+
+.modal section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.modal section i{
+    color: red;
+    font-size: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+}
+
+
+
 
 .modal__form {
   opacity: 0.7;
@@ -203,8 +255,7 @@
 @media (max-width: 1060px) {
        .infoEmpresa > section > div{
         width: 50%;
-        min-width: 50%;
-        
+        min-width: 50%;       
     }
 
 }
