@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fb7c801823.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Style/formulario.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/Js/appInsertUser.js"></script>
+    <title>From</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__title">
+            <h1>Formulario de registro</h1>
+            <form>
+                <input type="search" name="" id="search" placeholder=" Ingrese el Nombre">
+            </form>
+        </div>
+        <div class="contianer__absolut">
+
+            
+
+            <form class="conatiner__form" enctype="multipart/form-data"  id="form">
+
+                
+                <div class="container__from-div">
+                    <label for="ruc"> Ingrese su RUC:</label>
+                    <input type="text" name="ruc" id="ruc">
+                    <input type="hidden" id="ruc-id">
+                </div>
+
+                <div class="container__from-div">
+                    <label for="surname"> Ingrese sus apellidos:</label>
+                    <input type="text" name="surname" id="surname">
+                </div>
+
+                <div class="container__from-div">
+                    <label for="name"> Ingrese sus nombres:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="container__from-div">
+                    <label for="edad"> Ingrese su edad:</label>
+                    <input type="text" name="edad" id="edad">
+                </div>
+
+                <div class="container__from-div">
+                    <label for="email"> Ingrese su correo electronico:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="container__from-div">
+                    <label for="direccion"> Ingrese su direccion:</label>
+                    <input type="text" name="direccion" id="direccion">
+                </div>
+
+                <div class="container__from-div">
+                    <label for="telefono"> Ingrese su numero de telefono</label>
+                    <input type="text" name="telefono" id="telefono">
+                </div>
+
+                <div class="container__from-div">
+                    <label for="estado"> Escoja su estado civil</label>
+                    <select name="estado" id="estado">
+                        <option value=""></option>
+                        <option value="Soltero"> Soltero</option>
+                        <option value="Casado"> Casado</option>
+                        <option value="Union"> Union de echo</option>
+                        <option value="Divorciado"> Divorciado</option>
+                    </select>
+                </div>
+
+                <div class="container__from-div">
+                    <label for="sexo"> Escoja su sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value=""></option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </div>
+
+                <div class="container__from-div">
+                    <label for="nivel"> Escoja su Nivel academico</label>
+                    <select name="nivel" id="nivel">
+                        <option value=""></option>
+                        <option value="Primaria"> Primaria</option>
+                        <option value="Secundaria"> Secundaria</option>
+                        <option value="Tercer"> Tercer</option>
+                        <option value="Cuerto"> Cuarto</option>
+                    </select>
+                </div>
+                <div class="container__from-div">
+                    <label for="cargo"> Escoja su Cargo Laboral</label>
+                    <select name="cargo" id="cargo">
+                        <option value=""></option>
+                        <option value="Admin"> Administrativo</option>
+                        <option value="Bodegero"> Bodegero</option>
+                        <option value="Cajro"> Cajero</option>
+                    </select>
+                </div>
+
+                <div class="container__from-div">
+                    <label for="sueldo"> Escoja su Sueldo</label>
+                    <select name="sueldo" id="sueldo">
+                        <option value=""></option>
+                        <option value="1000"> 1000</option>
+                        <option value="850"> 850</option>
+                        <option value="500"> 500</option>
+                    </select>
+                </div>
+
+                <div class="container__from-div">
+                    <label for="ciudad"> Ingrese la ciudad en la que nacio:</label>
+                    <input type="text" name="ciudad" id="ciudad">
+                </div>
+
+                <div class="container__from-div">
+                    <label for=""> Agrege su foto</label>
+                    <i class="fa-solid fa-file-image" id="add-photo"></i>
+                    <input type="file" name="foto" id="photo">
+                
+                </div>
+
+                <div class="container__from-div">
+                    <label for=""> Curriculum</label>
+                    <i class="fa-solid fa-file-circle-plus" id="add-resume"></i>
+                    <input type="file" name="" id="resume">
+                </div>
+
+                <div class="container__from-div">
+
+                    <button class="container__from-btn" type="submit" name="validar">Enviar <i
+                            class="fa-solid fa-check"></i></button>
+                    <br>
+                    
+                </div>
+            </form>
+            <div class="card" id="card">
+                <ul id="cardContainer">
+
+                </ul>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <th> Cedula/ Ruc</th>
+                        <th> Nombres</th>
+                        <th> Cargo</th>
+                        <th></th>
+                    </thead>
+                    <tbody id="Users">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="container__presentacion" >
+            <div class="container__presentacion-img">
+                <img src="../User/bruno.jpg" alt="" srcset="">
+            </div>
+            <div class="container__presentacion-iframe">
+                <iframe src="../User_C/" id="iframe-doc"></iframe>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

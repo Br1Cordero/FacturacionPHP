@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./Style/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fb7c801823.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>Document</title>
+    <script src="./Js/appInsertUser.js"></script>
 
 
 </head>
@@ -68,19 +68,15 @@
             </section>
             <section class="Cliente">
 
-                <div class="search">
+                <form class="search">
                     <input type="search" name="search" id="search" placeholder="Ingrese el Ruc o la cedula">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </form>
 
                 <button id="open">Agregar</button>
 
-                <ul class="ClienteEncontrado">
-                    <li>
-                        <a>
-                            aaa
-                        </a>
-                    </li>
+                <ul class="ClienteEncontrado" id="cardContainer">
+                  
                 </ul>
             </section>
 
@@ -94,7 +90,7 @@
 
                     </section>
 
-                    <form action="#" method="post" class="modal__form">
+                    <form action="#" method="post" class="modal__form" id="form">
                         <div>
                             <input type="text" placeholder="INGRESE EL RUC O CEDULA" name="ruc" id="ruc">
                         </div>
