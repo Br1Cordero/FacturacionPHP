@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.00">
+  <infoTributaria>
+    <abiente>1</abiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>Mi Empresa S.A</razonSocial>
+    <nombreComercial>Mi Empresa S.A</nombreComercial>
+    <ruc>0909164691001</ruc>
+    <claveAcceso>1502202310909164691001010000010000011931234565915</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000123</secuencial>
+    <dirMatriz>La 31 y el oro</dirMatriz>
+  </infoTributaria>
+  <infoFactura>
+    <dirEstablecimiento>La 31 y el oro</dirEstablecimiento>
+    <obligadoContabilidad>NO</obligadoContabilidad>
+    <tipoIdentificacionComprador>04</tipoIdentificacionComprador>
+    <razonSocialComprador>PINTAG PINTAG CARLOS EDUARDO</razonSocialComprador>
+    <identificacionComprador>0909164691001</identificacionComprador>
+    <totalSinImpuestos>1.00</totalSinImpuestos>
+    <fechaEmision>15022023</fechaEmision>
+    <totalDescuento>00</totalDescuento>
+    <totalConImpuestos/>
+    <totalImpuesto/>
+    <codigo>2</codigo>
+    <baseImponible>1.00</baseImponible>
+    <valor>0.00</valor>
+    <propina>0.00</propina>
+    <importeTotal>1.00</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago/>
+      <total>1.00</total>
+      <plazo>30</plazo>
+      <unidadTiempo>dias</unidadTiempo>
+    </pagos>
+  </infoFactura>
+  <detalles>
+    <detalle/>
+    <codigoPrincipal>pro 001</codigoPrincipal>
+    <descripcion>descripcion del producto</descripcion>
+    <cantidad>1</cantidad>
+    <precioUnitario>1</precioUnitario>
+    <descuento>0</descuento>
+    <precioTotalSinImpuesto>1.00</precioTotalSinImpuesto>
+    <impuestos>
+      <impuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <tarifa>0.00</tarifa>
+        <baseImponible>1.00</baseImponible>
+        <valor>0.00</valor>
+      </impuesto>
+    </impuestos>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="email">brunomateoc7@gmail.com</campoAdicional>
+  </infoAdicional>
+</factura>
