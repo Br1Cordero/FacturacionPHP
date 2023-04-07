@@ -16,7 +16,10 @@
     --sombra: 0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF inset, 0px -3px 2px rgba(0,0,0,0.25) inset; ;
 }
 
-
+a{
+    text-decoration: none;
+    color: #111000
+}
 .paguina{
     width: 100%;
     height: 100%;
